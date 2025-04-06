@@ -28,9 +28,9 @@ class AuthService {
     await _supabase.auth.signOut();
   }
 
-  // Get user email
-  String? getCurrentUserEmail() {
-    final User? user = _supabase.auth.currentUser;
-    return user?.email;
-  }
+  // Get current user
+  User? get currentUser => _supabase.auth.currentUser;
+
+  // Get stream of Auth State Changes
+  Stream<AuthState> get authStateChange => _supabase.auth.onAuthStateChange;
 }

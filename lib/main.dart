@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:notes_app_supabase/auth/auth_gate.dart';
-import 'package:notes_app_supabase/pages/login_page.dart';
+import 'package:notes_app_supabase/screens/login_screen.dart';
+import 'package:notes_app_supabase/screens/notes_screen.dart';
+import 'package:notes_app_supabase/screens/register_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
+import 'package:notes_app_supabase/screens/splash_screen.dart';
 
 void main() async {
   // Ensure flutter is initialized
@@ -31,9 +34,26 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AuthGate(),
+      title: "Flutter Notes App",
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        brightness: Brightness.light,
+      ),
+      darkTheme: ThemeData(
+        primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
+      ),
+      themeMode: ThemeMode.system,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const SplashScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/register': (context) => const RegisterScreen(),
+        '/notes': (context) => const NotesScreen(),
+        // '/edit_note': (context) => EditNoteScreen(),
+      },
     );
   }
 }
