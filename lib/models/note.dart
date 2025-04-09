@@ -20,9 +20,9 @@ class Note {
       id: json['id'],
       title: json['title'],
       content: json['content'],
-      userId: json['userId'],
-      createdAt: json['createdAt'],
-      updatedAt: json['updatedAt'],
+      userId: json['user_id'],
+      createdAt: DateTime.parse(json['created_at']),
+      updatedAt: DateTime.parse(json['updated_at']),
     );
   }
 
