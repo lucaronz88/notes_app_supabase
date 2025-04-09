@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app_supabase/components/my_textformfield.dart';
 import 'package:notes_app_supabase/database/note_database.dart';
 import 'package:notes_app_supabase/services/auth_service.dart';
 
