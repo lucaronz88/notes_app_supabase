@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:notes_app_supabase/screens/edit_note_screen.dart';
 import 'package:notes_app_supabase/screens/login_screen.dart';
 import 'package:notes_app_supabase/screens/notes_screen.dart';
 import 'package:notes_app_supabase/screens/register_screen.dart';
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const LoginScreen(),
         '/register': (context) => const RegisterScreen(),
         '/notes': (context) => const NotesScreen(),
-        // '/edit_note': (context) => EditNoteScreen(),
+        '/edit_note': (context) => const EditNoteScreen(),
       },
     );
   }

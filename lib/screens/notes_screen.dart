@@ -69,6 +69,7 @@ class _NotesScreenState extends State<NotesScreen> {
     try {
       await _noteDatabase.deleteNote(id, _userId);
       _loadNotes();
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("Note deleted successfully")),
       );
