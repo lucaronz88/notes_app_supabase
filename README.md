@@ -1,16 +1,31 @@
-# notes_app_supabase
+# Flutter Notes App
 
-A new Flutter project.
+A simple note-taking app built with Flutter. Perfect for organizing your thoughts, creating to-do-list, and jotting quick ideas - designed for Android and iOS.
+
+## Features
+
+- User authentication to protect your privacy.
+- Create, edit, and delete notes.
+- Online database with Supabase.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- Flutter SDK [Install Flutter](https://docs.flutter.dev/get-started/install)
+- Dart SDK (comes with Flutter)
+- Android Studio / Xcode / VS Code
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+git clone https://github.com/lucaronz88/notes_app_supabase.git
+cd notes_app_supabase
+flutter pub get
+flutter run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Built With
+- Flutter
+- Supabase (backend)
+
+
+
+
