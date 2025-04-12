@@ -22,9 +22,26 @@ cd notes_app_supabase
 flutter pub get
 flutter run
 
-### Built With
+```
+
+## Built With
+
 - Flutter
 - Supabase (backend)
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## Contact
+
+For any questions or suggestions, feel free to reach out:
+- GitHub: @lucaronz88
+- Email: lucaronz88@gmail.com
 
 
 
